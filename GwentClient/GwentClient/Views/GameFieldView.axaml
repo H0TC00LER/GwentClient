@@ -25,7 +25,9 @@
 			<Panel>
 				<DockPanel Margin="100 0">
 					<Panel Height="150" DockPanel.Dock="Bottom">
+						<ItemsControl Items="{Binding Hand}">
 
+						</ItemsControl>
 					</Panel>
 
 					<Grid RowDefinitions="*, *, *, *">

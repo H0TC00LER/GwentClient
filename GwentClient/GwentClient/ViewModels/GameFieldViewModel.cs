@@ -17,9 +17,17 @@ namespace GwentClient.ViewModels
         public ObservableCollection<CardViewModel> PlayerMelee { get; set; }
         public ObservableCollection<CardViewModel> EnemyMelee { get; set; }
         public ObservableCollection<CardViewModel> EnemyShooter { get; set; }
-        public GameFieldViewModel(List<Card> hand)
+        public GameFieldViewModel(List<int> hand, string playerName, string enemyName)
         {
+            PlayerName = playerName;
+            EnemyName = enemyName;
+
             Hand = new ObservableCollection<CardViewModel>();
+            foreach(var cardId in hand)
+            {
+                var card = CardLibrary.Cards[cardId];
+                Hand.Add(new CardViewModel(card));
+            }
         }
     }
 }
