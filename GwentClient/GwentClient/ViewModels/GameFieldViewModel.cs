@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace GwentClient.ViewModels
 {
-    public class GameFieldViewModel
+    public class GameFieldViewModel : ViewModelBase
     {
         public string PlayerName { get; }
         public string EnemyName { get; }

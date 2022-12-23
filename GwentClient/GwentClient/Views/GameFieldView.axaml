@@ -2,6 +2,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:views="clr-namespace:GwentClient.Views"
              mc:Ignorable="d" d:DesignWidth="1920" d:DesignHeight="1080"
              x:Class="GwentClient.Views.GameFieldView">
 
@@ -33,7 +34,7 @@
 					<Grid RowDefinitions="*, *, *, *">
 						<Panel Grid.Row="0">
 							<Border Classes="row"/>
-							<Image Margin="30" Source="/Assets/Range.png"/>
+							<Image Margin="30" Source="/Assets/Shooter.png"/>
 							<ItemsControl Items="{Binding EnemyShooter}">
 
 							</ItemsControl>
@@ -55,18 +56,7 @@
 							</ItemsControl>
 						</Panel>
 
-						<Button Background="Transparent" HorizontalAlignment="Stretch" Grid.Row="3">
-							<Panel>
-
-								<Border Classes="row"/>
-								<Image Margin="30" Source="/Assets/Range.png"/>
-
-								<ItemsControl Items="{Binding PlayerShooter}">
-
-								</ItemsControl>
-
-							</Panel>
-						</Button>
+						<views:RowView Grid.Row="3"/>
 						
 						
 					</Grid>

@@ -15,7 +15,7 @@ namespace GwentClient.ViewModels
             RowCards = new ObservableCollection<CardViewModel>();
             RowRole = role;
             RowImagePath = @"/Assets/" + RowRole + ".png";
-            this.IsAvailableToPlayer = isAvailableToPlayer;
+            IsAvailableToPlayer = isAvailableToPlayer;
         }
     }
 }
