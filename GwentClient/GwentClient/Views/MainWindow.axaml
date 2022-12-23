@@ -3,23 +3,11 @@
         xmlns:vm="using:GwentClient.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:views="clr-namespace:GwentClient.Views"
         mc:Ignorable="d" d:DesignWidth="1920" d:DesignHeight="1080"
         x:Class="GwentClient.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
-        Title="GwentClient">
-
-	<DockPanel>
-		<Panel DockPanel.Dock="Left" Width="200" Background="Red">
-			
-		</Panel>
-
-		<Panel DockPanel.Dock="Bottom" Height="150" Background="Green">
-			
-		</Panel>
-
-		<Panel>
-			
-		</Panel>
-	</DockPanel>
-
+        Title="GwentClient"
+		WindowState="Maximized">
+    <views:GameFieldView/>
 </Window>

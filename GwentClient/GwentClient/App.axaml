@@ -8,5 +8,14 @@
 
     <Application.Styles>
         <FluentTheme Mode="Light"/>
+		<Style Selector="Border.row">
+			<Setter Property="CornerRadius" Value="30" />
+			<Setter Property="BoxShadow" Value="inset 5 5 70 10 black" />
+			<Setter Property="Margin" Value="5" />
+		</Style>
+		<Style Selector="TextBlock">
+			<Setter Property="FontFamily" Value="Impact"/>
+			<Setter Property="FontWeight" Value="SemiLight"/>
+		</Style>
     </Application.Styles>
 </Application>
