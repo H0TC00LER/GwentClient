@@ -15,12 +15,12 @@
 				<ContentControl VerticalAlignment="Top" Margin="0 150 0 0" Content="{Binding EnemyStatus}"/>
 			</Panel>
 
-			<Panel DockPanel.Dock="Right" Width="250">
+			<Panel DockPanel.Dock="Right" Width="150">
 
 			</Panel>
 
 			<Panel>
-				<DockPanel Margin="100 0">
+				<DockPanel Margin="50 0">
 					<Panel Height="190" DockPanel.Dock="Bottom">
 						<ListBox ScrollViewer.VerticalScrollBarVisibility="Disabled" Background="Transparent" SelectedIndex="{Binding SelectedCard}" Items="{Binding Hand}">
 							<ListBox.ItemsPanel>
@@ -28,11 +28,6 @@
 									<WrapPanel/>
 								</ItemsPanelTemplate>
 							</ListBox.ItemsPanel>
-							<ListBox.Styles>
-								<Style Selector="ListBoxItem:pointerover">
-									<Setter Property="Background" Value="Red"/>
-								</Style>
-							</ListBox.Styles>
 						</ListBox>
 					</Panel>
 
