@@ -23,5 +23,10 @@ namespace GwentClient.ViewModels
             var assets = AvaloniaLocator.Current.GetService<IAssetLoader>();
             RowImage = new Bitmap(assets.Open(new Uri($"avares://GwentClient/Assets/{RowRole}.png")));
         }
+
+        public void AddCard()
+        {
+
+        }
     }
 }

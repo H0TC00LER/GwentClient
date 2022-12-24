@@ -1,4 +1,4 @@
-﻿namespace GwentClient.Models
+﻿namespace GwentClient.Models.Dtos
 {
     public class GameStartResponse
     {
